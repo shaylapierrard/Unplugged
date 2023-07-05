@@ -1,6 +1,5 @@
 /*! HTML5 Boilerplate v8.0.0 | MIT License | https://html5boilerplate.com/ */
 
-/* main.css 2.1.0 | MIT License | https://github.com/h5bp/main.css#readme */
 /*
  * What follows is the result of much research on cross-browser styling.
  * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
@@ -107,9 +106,10 @@ html {
 
 body {
   font-family: 'Open Sans', sans-serif;
-  font-size: 1 em;
+  font-size: 1em;
   color: #e3e3ed;
   text-align: left;
+  background-color: #202322;
 }
 
 ul,
@@ -128,6 +128,7 @@ h2 {
   font-family: 'Poppins', sans-serif;
   font-size: 1.875em;
   font-weight: 500;
+  margin: 0;
 }
 
 h3,
@@ -234,9 +235,17 @@ footer .social-icons {
 }
 
 footer .social-icons p {
+  background-color: #527158;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+footer .social-icons p i {
+  font-size: 1.3125em;
 }
 
 footer .copyright {
@@ -320,7 +329,6 @@ input[type=button] {
 .features .features-items {
   display: flex;
   justify-content: center;
-  align-items: flex-start;
   flex-flow: row wrap;
 }
 
@@ -386,10 +394,6 @@ input[type=button] {
   margin: 0;
 }
 
-
-
-
-
 /*================================ FAQ Page ================================*/
 .faq {
   background-color: #527158;
@@ -429,8 +433,7 @@ input[type=button] {
  * Hide visually and from screen readers
  */
 
-.hidden,
- {
+.hidden {
   display: none !important;
 }
 
@@ -588,6 +591,10 @@ input[type=button] {
     margin-bottom: 20px;
   }
 
+   .features .features-items {
+    align-items: flex-start;
+  }
+
   .features article {
     display: flex;
     align-items: center;
@@ -600,6 +607,9 @@ input[type=button] {
 
   }
 
+   .features i {
+    margin-bottom: 30px;
+  }
   /* Reviews */
   .reviews article {
     display: flex;
@@ -630,7 +640,6 @@ input[type=button] {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    flex-direction: row;
 
   }
 
@@ -645,6 +654,12 @@ input[type=button] {
 
   footer p {
     line-height: 1.285;
+
+  }
+
+  footer .social-icons {
+    width: 12.5em;
+    justify-content: space-between;
   }
 
   footer .copyright {
@@ -750,7 +765,7 @@ aside .content-wrapper {
 
 aside .content-wrapper .form-description,
 aside .content-wrapper .form {
-  width: 40%;
+  width: 30%;
 }
 
 .form-description p {
@@ -808,8 +823,8 @@ footer h4 {
     font-size: 1.125em;
     line-height: 1;
   }
-
 }
+
 /* ==========================================================================
    Print styles.
    Inlined to avoid the additional HTTP request:
