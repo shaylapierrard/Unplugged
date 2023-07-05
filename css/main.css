@@ -84,6 +84,18 @@ textarea {
 }
 
 /* ==========================================================================
+   Browser Upgrade Prompt
+   ========================================================================== */
+
+.browserupgrade {
+  margin: 0.2em 0;
+  background: #ccc;
+  color: #000;
+  padding: 0.2em 0;
+}
+
+
+/* ==========================================================================
    Author's custom styles
    ========================================================================== */
 /* General Styles */
@@ -312,6 +324,11 @@ input[type=button] {
   flex-flow: row wrap;
 }
 
+.features i {
+	font-size: 3.75em;
+    margin-bottom: 40px;
+}
+
 .features p {
   text-align: center;
   margin: 0;
@@ -413,7 +430,7 @@ input[type=button] {
  */
 
 .hidden,
-[hidden] {
+ {
   display: none !important;
 }
 
@@ -603,16 +620,13 @@ input[type=button] {
     margin: 0;
   }
 
-  .reviews article div {
-    width: 49%;
-  }
 
   /* Footer */
   footer .content-wrapper {
     width: 65%;
   }
 
-  .footer-content {
+  footer.footer-content {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -655,6 +669,9 @@ input[type=button] {
 
   }
 
+  .map figure {
+    padding-bottom: 45.5%;
+  }
   .contact-section .content-wrapper h2 {
     width: 80%
   }
@@ -771,7 +788,8 @@ footer h4 {
 
 .mission h2,
 .contact-section .content-wrapper h2 {
-  width: 95%
+  width: 95%;
+  font-size: 3em;
 }
 
 .contact-content h4 {
@@ -782,6 +800,7 @@ footer h4 {
   ==========================================================*/
 .faq h2 {
   width: 100%;
+  font-size: 3em;
 }
 
 .faq h4,
