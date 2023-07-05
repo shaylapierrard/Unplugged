@@ -96,11 +96,14 @@ html {
 body {
   font-family: 'Open Sans', sans-serif;
   font-size: 1 em;
+  color: #e3e3ed;
   text-align: left;
 }
 
 ul, ol {
  list-style-type: none;
+ margin: 0;
+ padding: 0;
 }
 
 a {
@@ -111,11 +114,13 @@ a {
 h2 {
   font-family: 'Poppins', sans-serif;
   font-size: 1.875em;
+  font-weight: 500;
 }
 
 h3, h4 {
   font-family: 'Poppins', sans-serif;
   font-size: 1.125em;
+  font-weight: 500;
   margin: 20px 0;
 }
 
@@ -146,17 +151,20 @@ header {
  display: flex;
  justify-content: center; 
  padding: 15px 0;
+ background-color: #202322;
 }
 
 header .content-wrapper {
+  margin: 0;
  display: flex;
  justify-content: center; 
  align-items: center;
 flex-flow: row wrap;
-margin: 0;
+
 }
 
 .header-divider {
+  background: #3a3a3a;
  width: 100%;
  height: 1px;
  margin: 10px 0 20px 0;
@@ -165,6 +173,9 @@ margin: 0;
 
 header nav {
  width: 60%;
+ font-size: 1.125em;
+ font-weight: 700;
+ text-transform: uppercase;
 }
 
 header nav ul {
@@ -174,11 +185,16 @@ header nav ul {
 
 }
 
+header nav ul li {
+  font-size: 1.125em;
+}
+
 footer { 
  display: flex;
  flex-direction: column;
  align-items: center;
 text-align: center;
+background-color: #202322;
 }
 
 footer p {
@@ -210,7 +226,7 @@ footer .copyright {
 
 }
 
-
+/* -------------------- Mobile Styles - Homepage -------------------- */
 /* Hero Area */
 
 .hero-area {
@@ -218,9 +234,45 @@ footer .copyright {
   justify-content: center; 
 }
 
+.hero-area h1 {
+  font-size: 2.25em;
+  font-family: 'Poppins', Helvetica, Arial, sans-serif;
+  font-weight: 500;
+  line-height: 1.2;
+}
+
+/* Aside */
+
 aside {
+  background-color: #527158;
   display: flex;
-  justify-content: center; 
+  justify-content: center;
+}
+
+aside .form {
+  margin-top: 30px;
+}
+
+input[type=text] {
+  box-sizing: border-box;
+  width: 100%;
+  color: #2a423a;
+  font-style: italic;
+  padding: 1em;
+}
+
+input[type=button] {
+  width: 100%;
+  padding: 20px 0;
+  margin-top: 20px;
+  background-color: #2a423a;
+  font-family: 'Poppins', Helvetica, Arial, sans-serif;
+  font-weight: 500;
+  font-size: 1.125em;
+  color: #e2e3ed;
+  border: none;
+  text-align: center;
+  text-transform: uppercase;
 }
 
 /* Features */
@@ -247,18 +299,21 @@ aside {
 }
 
 .features p {
+  text-align: center;
   margin: 0;
 }
 
 /*Reviews */
 
 .reviews { 
+  background-color: #2a423a;
   display: flex;
  justify-content: center; 
 }
 
 .reviews h2 {
  margin-bottom: 40px;
+ line-height: 1;
 }
 
 .reviews h3 {
@@ -269,11 +324,13 @@ aside {
 /*================================ About Page ================================*/
 
 .mission {
+  background-color: #527158;
   display: flex;
  justify-content: center; 
 }
 
 .contact-section {
+  background-color: #2a423a;
   display: flex;
  justify-content: center; 
 }
@@ -285,6 +342,7 @@ aside {
 
 /*================================ FAQ Page ================================*/
 .faq {
+  background-color: #527158;
   display: flex;
   justify-content: center;
 }
@@ -299,11 +357,16 @@ aside {
 
 .faq h2 {
   margin: 40px;
+  line-height: 1;
 
 }
 
 .faq-content { 
   margin-bottom: 50px;
+}
+
+.faq-content h4 {
+  line-height: 1.333;
 }
 
 
@@ -390,6 +453,32 @@ aside {
   clear: both;
 }
 
+
+aside .form {
+  margin-top: 30px;
+}
+ 
+input[type=text] {
+  box-sizing: border-box;
+  width: 100%;
+  color: #2a423a;
+  font-style: italic;
+  padding: 1em;
+}
+ 
+input[type=button] {
+  width: 100%;
+  padding: 20px 0;
+  margin-top: 20px;
+  background-color: #2a423a;
+  font-family: 'Poppins', Helvetica, Arial, sans-serif;
+  font-weight: 500;
+  font-size: 1.125em;
+  color: #e2e3ed;
+  border: none;
+  text-align: center;
+  text-transform: uppercase;
+}
 /* ==========================================================================
    EXAMPLE Media Queries for Responsive Design.
    These examples override the primary ('mobile first') styles.
