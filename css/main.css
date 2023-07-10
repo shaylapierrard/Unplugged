@@ -538,7 +538,7 @@ input[type=button] {
     padding: 33px 0;
   }
 
-  header .content-warpper {
+  header .content-wrapper {
     width: 100%;
     justify-content: space-between;
   }
@@ -636,7 +636,7 @@ input[type=button] {
     width: 65%;
   }
 
-  footer.footer-content {
+  footer .footer-content {
     display: flex;
     justify-content: space-between;
     align-items: center;
